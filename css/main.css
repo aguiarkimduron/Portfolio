@@ -1,0 +1,14 @@
+@import 'variables.css';
+/* Overide */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+}
+ul{
+    list-style: none;
+}
+body{
+    
+}
