@@ -1,14 +1,120 @@
 @import 'variables.css';
-/* Overide */
+/* Overide START */
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     font-family: 'Rubik', sans-serif;
+    color: var(--primary);
 }
 ul{
     list-style: none;
 }
-body{
-    
+h2{
+    margin: 2rem 0 1rem 0;
 }
+/* Overide END */
+
+/* Reusable END */
+.container{
+    position: relative;
+    margin: 0 auto;
+    padding: 1rem;
+}
+.btn{
+    color: var(--primary);
+    padding: 0.5rem;
+    background: var(--light);
+    border: 0.1rem solid var(--secondary);
+    border-radius: 0.2rem;
+    transition: all 0.3s;
+}
+.btn:hover{
+    background: var(--primary);
+    border: 0.1rem solid var(--primary);
+    color: var(--light);
+}
+/* Reusable START */
+
+/* header-section START */
+header{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-title{
+    font-size: 6rem;
+    font-weight: 300;
+}
+nav{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    box-shadow: 0 1px 3px var(--secondary);
+}
+nav > a {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+nav > ul {
+    width: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+nav > ul > li > a{
+    color: var(--primary);
+    padding-bottom: 0.3rem;
+    transition: all 0.2s;
+}
+nav > ul > li > a:hover{
+    border-bottom: 0.2rem solid var(--primary);
+}
+/* header-section END */
+
+/* works-section START */
+#section-works{
+    background: var(--light-secondary);
+}
+.works-footer {
+    margin: 3rem 0;
+    width: 100%;
+    text-align: center;
+}
+.works-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+}
+.works-container > div > h4,
+.works-container > div > p {
+    margin: 1rem 0;
+}
+.works-img{
+    position: relative;
+    width: fit-content;
+}
+.works-img > img{
+    height: 300px; 
+}
+.works-img-hover{
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translate(-70%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.works-img-hover > a{
+    margin: auto 0.5rem;
+}
+/* works-section END */
