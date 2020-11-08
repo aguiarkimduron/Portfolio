@@ -61,7 +61,7 @@ nav{
     display: flex;
     justify-content: space-between;
     background: white;
-    box-shadow: 0 1px 3px var(--secondary);
+    box-shadow: -0.1rem 0.1rem 0.2rem var(--secondary);
 }
 nav > a {
     font-size: 1.5rem;
